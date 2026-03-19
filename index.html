@@ -11,13 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
 
+    <!-- KHÔNG DÙNG FILE stylesheet.css CŨ NỮA, CSS VIẾT HẾT VÀO ĐÂY -->
     <style>
       /* CÀI ĐẶT NỀN VÀ FONT CHỮ CHUNG */
       body {
-        background-color: #fff0f5; 
-        background-image: radial-gradient(#ffb6c1 1px, transparent 1px); 
+        background-color: #fff0f5; /* Màu nền hồng pastel */
+        background-image: radial-gradient(#ffb6c1 1px, transparent 1px); /* Chấm bi mờ */
         background-size: 20px 20px;
-        color: #5d4037; 
+        color: #5d4037; /* Chữ màu nâu cà phê */
         font-family: 'Quicksand', sans-serif;
         font-size: 16px;
         line-height: 1.6;
@@ -57,14 +58,14 @@
         border-radius: 50px;
         border: 3px dashed #ffb8b8;
         box-shadow: 0 5px 15px rgba(255,107,129,0.2);
-        margin: 30px 0 15px 0;
+        margin: 30px 0 10px 0;
       }
 
-      /* ẢNH AVATAR TRÒN XOE */
+      /* ẢNH AVATAR - CHỈNH LẠI CHO TRÒN XOE KHÔNG BỊ MÉO */
       .avatar {
         width: 220px;
-        height: 220px; 
-        object-fit: cover; 
+        height: 220px; /* Bắt buộc height bằng width */
+        object-fit: cover; /* Cắt ảnh lấp đầy khung mà không bị méo */
         border-radius: 50%;
         border: 6px solid white;
         box-shadow: 0 10px 20px rgba(255,107,129,0.3);
@@ -74,21 +75,21 @@
         transform: scale(1.05) rotate(5deg); 
       }
 
-      /* THẺ (CARDS) CHUNG */
+      /* THẺ DỰ ÁN VÀ ĐIA ĐIỂM (CARDS) */
       .cute-card {
         background: white;
         border-radius: 20px;
         box-shadow: 0 8px 25px rgba(255, 184, 184, 0.4);
         transition: 0.3s;
         margin-bottom: 25px;
-        overflow: hidden; 
+        overflow: hidden; /* Cắt gọn những thứ tràn ra khỏi viền bo tròn */
       }
       .cute-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 12px 30px rgba(255, 184, 184, 0.6);
       }
 
-      /* ẢNH CỦA PHẦN DỰ ÁN (NẰM NGANG) */
+      /* ẢNH DỰ ÁN */
       .project-img {
         width: 100%;
         height: auto;
@@ -100,20 +101,13 @@
         transform: scale(1.03);
       }
 
-      /* --- CSS MỚI CHO PHẦN DU LỊCH (ẢNH TRÊN - CHỮ DƯỚI) --- */
-      .travel-img-container {
-        display: flex;
-        gap: 15px;
-        justify-content: center;
-        margin-bottom: 20px; /* Tạo khoảng cách giữa ảnh và chữ */
-      }
+      /* ẢNH DU LỊCH */
       .travel-img {
         width: 100%;
-        max-width: 350px; /* Giới hạn độ rộng để ảnh không bị bành ra quá to */
-        height: 250px;
+        height: 180px;
         object-fit: cover;
         border-radius: 15px;
-        border: 3px solid #74ecec; 
+        border: 3px solid #74ecec; /* Viền xanh mint */
         transition: 0.3s;
       }
       .travel-img:hover {
@@ -123,7 +117,7 @@
       /* TÊN DỰ ÁN / ĐỊA ĐIỂM */
       .papertitle {
         font-family: 'Baloo 2', cursive;
-        font-size: 1.6em;
+        font-size: 1.5em;
         color: #ff7675;
       }
       
@@ -132,11 +126,9 @@
         font-weight: bold;
         font-style: normal;
         background: #e0fafa;
-        padding: 4px 12px;
-        border-radius: 15px;
+        padding: 3px 10px;
+        border-radius: 10px;
         font-size: 0.9em;
-        display: inline-block;
-        margin-top: 5px;
       }
 
       /* VÙNG CHỨA CHÍNH */
@@ -177,24 +169,23 @@
         </tbody>
       </table>
 
-      <!-- ============================================== -->
       <!-- TIÊU ĐỀ DỰ ÁN & THÀNH TỰU -->
       <div style="text-align: center;">
         <h2>✨ Dự án & Thành tựu ✨</h2>
       </div>
 
-      <!-- DANH SÁCH DỰ ÁN (BỐ CỤC: TRÁI ẢNH - PHẢI CHỮ) -->
+      <!-- DANH SÁCH DỰ ÁN & THÀNH TỰU -->
       <table style="width:100%;border:0;border-spacing:0;">
         <tbody>
-          <!-- ĐƯỜNG TÁO QUÂN -->
+          <!-- 1. ĐƯỜNG TÁO QUÂN -->
           <tr>
             <td>
               <table class="cute-card" style="width:100%;border:0;border-spacing:0;">
                 <tr>
-                  <td style="padding:20px;width:35%;vertical-align:middle;">
+                  <td style="padding:20px;width:30%;vertical-align:middle;">
                     <img src='images/duongtaoquan.jpg' class="project-img">
                   </td>
-                  <td style="padding:20px;width:65%;vertical-align:middle;">
+                  <td style="padding:20px;width:70%;vertical-align:middle;">
                     <span class="papertitle">🌱 Đường Táo Quân</span><br>
                     <em>Dự án bảo vệ môi trường</em>
                     <p>
@@ -206,15 +197,15 @@
             </td>
           </tr>
 
-          <!-- GIẢI NHẤT HÓA HỌC -->
+          <!-- 2. GIẢI NHẤT MÔN HÓA HỌC -->
           <tr>
             <td>
               <table class="cute-card" style="width:100%;border:0;border-spacing:0;">
                 <tr>
-                  <td style="padding:20px;width:35%;vertical-align:middle;">
+                  <td style="padding:20px;width:30%;vertical-align:middle;">
                     <img src='images/thanhtuu2.jpg' class="project-img">
                   </td>
-                  <td style="padding:20px;width:65%;vertical-align:middle;">
+                  <td style="padding:20px;width:70%;vertical-align:middle;">
                     <span class="papertitle">🥇 Giải Nhất HSG Hóa học</span><br>
                     <em>Thành tựu cấp 3</em>
                     <p>
@@ -226,15 +217,15 @@
             </td>
           </tr>
 
-          <!-- GIẢI BA ĐỊA LÝ -->
+          <!-- 3. GIẢI BA MÔN ĐỊA LÝ -->
           <tr>
             <td>
               <table class="cute-card" style="width:100%;border:0;border-spacing:0;">
                 <tr>
-                  <td style="padding:20px;width:35%;vertical-align:middle;">
+                  <td style="padding:20px;width:30%;vertical-align:middle;">
                     <img src='images/thanhtuu1.jpg' class="project-img">
                   </td>
-                  <td style="padding:20px;width:65%;vertical-align:middle;">
+                  <td style="padding:20px;width:70%;vertical-align:middle;">
                     <span class="papertitle">🥉 Giải Ba HSG Địa lý</span><br>
                     <em>Thành tựu cấp 3</em>
                     <p>
@@ -248,30 +239,26 @@
         </tbody>
       </table>
 
-      <!-- ============================================== -->
       <!-- TIÊU ĐỀ: NHỮNG NƠI MÌNH ĐÃ ĐI -->
       <div style="text-align: center;">
         <h2>✈️ Những nơi mình đã đi 📸</h2>
       </div>
 
-      <!-- DANH SÁCH DU LỊCH (BỐ CỤC: TRÊN ẢNH - DƯỚI CHỮ) -->
+      <!-- DANH SÁCH NHỮNG NƠI ĐÃ ĐI -->
       <table style="width:100%;border:0;border-spacing:0;">
         <tbody>
-          <!-- HẢI PHÒNG -->
+          <!-- HẢI PHÒNG (Đã sửa lại 1 ảnh, đồng bộ 30-70) -->
           <tr>
             <td>
-              <table class="cute-card" style="width:100%;border:0;border-spacing:0; text-align: center;">
+              <table class="cute-card" style="width:100%;border:0;border-spacing:0;">
                 <tr>
-                  <td style="padding:25px;">
-                    <!-- Ảnh ở trên -->
-                    <div class="travel-img-container">
-                      <img src='images/haiphong1.jpg' class="travel-img">
-                      <img src='images/haiphong2.jpg' class="travel-img">
-                    </div>
-                    <!-- Chữ ở dưới -->
+                  <td style="padding:20px;width:30%;vertical-align:middle;">
+                    <img src='images/haiphong1.jpg' class="travel-img" style="height: auto;">
+                  </td>
+                  <td style="padding:20px;width:70%;vertical-align:middle;">
                     <span class="papertitle">🌊 Hải Phòng Foodtour</span><br>
                     <em>Check-in đất cảng</em>
-                    <p style="margin-top: 15px; font-size: 1.1em;">
+                    <p>
                       Hải Phòng đi chơi cùng bạn bè siêu vui luôn! Càn quét đủ món ngon, lượn lờ phố phường ngắm cảnh cực cháy 🦀🍜.
                     </p>
                   </td>
@@ -283,17 +270,15 @@
           <!-- HƯNG YÊN -->
           <tr>
             <td>
-              <table class="cute-card" style="width:100%;border:0;border-spacing:0; text-align: center;">
+              <table class="cute-card" style="width:100%;border:0;border-spacing:0;">
                 <tr>
-                  <td style="padding:25px;">
-                    <!-- Ảnh ở trên -->
-                    <div class="travel-img-container">
-                      <img src='images/hobannguyet1.jpg' class="travel-img" style="max-width: 500px;">
-                    </div>
-                    <!-- Chữ ở dưới -->
+                  <td style="padding:20px;width:30%;vertical-align:middle;">
+                    <img src='images/hobannguyet1.jpg' class="travel-img" style="height: auto;">
+                  </td>
+                  <td style="padding:20px;width:70%;vertical-align:middle;">
                     <span class="papertitle">🌅 Hồ Bán Nguyệt - Hưng Yên</span><br>
                     <em>Quê hương yêu dấu</em>
-                    <p style="margin-top: 15px; font-size: 1.1em;">
+                    <p>
                       Hồ Bán Nguyệt - Hưng Yên quê mình nè, chiều chiều ra đây hóng gió ngắm hoàng hôn ta nói nó chill chữ ill kéo dài luôn á 🍃🧡.
                     </p>
                   </td>
@@ -305,17 +290,15 @@
           <!-- ĐÀ LẠT -->
           <tr>
             <td>
-              <table class="cute-card" style="width:100%;border:0;border-spacing:0; text-align: center;">
+              <table class="cute-card" style="width:100%;border:0;border-spacing:0;">
                 <tr>
-                  <td style="padding:25px;">
-                    <!-- Ảnh ở trên -->
-                    <div class="travel-img-container">
-                      <img src='images/dalat1.jpg' class="travel-img" style="max-width: 500px;">
-                    </div>
-                    <!-- Chữ ở dưới -->
+                  <td style="padding:20px;width:30%;vertical-align:middle;">
+                    <img src='images/dalat1.jpg' class="travel-img" style="height: auto;">
+                  </td>
+                  <td style="padding:20px;width:70%;vertical-align:middle;">
                     <span class="papertitle">🌲 Đà Lạt mộng mơ</span><br>
                     <em>Thành phố ngàn hoa</em>
-                    <p style="margin-top: 15px; font-size: 1.1em;">
+                    <p>
                       Đà Lạt đợt đi trồng hoa trong đây nè. Thời tiết se lạnh, hoa nở rực rỡ, đi làm vườn mà cứ ngỡ đang quay MV ca nhạc 🌸⛄.
                     </p>
                   </td>
