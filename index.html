@@ -2,101 +2,203 @@
 <html lang="vi">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <title>Phạm Thị Thanh Huyền - Portfolio</title>
-
+    <title>Thanh Huyền 🧀 - Portfolio</title>
     <meta name="author" content="Phạm Thị Thanh Huyền">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     
+    <!-- Nhúng Font chữ bo tròn siêu cute từ Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+      /* CÀI ĐẶT NỀN VÀ FONT CHỮ CHUNG */
+      body {
+        background-color: #fff0f5; /* Màu nền hồng pastel */
+        background-image: radial-gradient(#ffb6c1 1px, transparent 1px); /* Chấm bi mờ */
+        background-size: 20px 20px;
+        color: #5d4037; /* Chữ màu nâu cà phê thay vì đen để nhìn mềm mại hơn */
+        font-family: 'Quicksand', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      /* TÊN CỦA BẠN */
+      .name {
+        font-family: 'Baloo 2', cursive;
+        font-size: 2.8em;
+        color: #ff6b81; /* Chữ màu hồng đậm */
+        text-shadow: 2px 2px 0px #ffeaa7; /* Đổ bóng màu vàng cute */
+        margin-bottom: 5px;
+      }
+
+      /* LIÊN KẾT (LINKS) */
+      a {
+        color: #ff9f43;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      a:hover {
+        color: #ff6b81;
+        text-decoration: dashed underline;
+      }
+
+      /* TIÊU ĐỀ H2 */
+      h2 {
+        font-family: 'Baloo 2', cursive;
+        color: #ff6b81;
+        text-align: center;
+        background: white;
+        display: inline-block;
+        padding: 10px 30px;
+        border-radius: 50px;
+        border: 3px dashed #ffb8b8;
+        box-shadow: 0 5px 15px rgba(255,107,129,0.2);
+      }
+
+      /* ẢNH AVATAR */
+      .avatar {
+        width: 100%;
+        max-width: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 6px solid white;
+        box-shadow: 0 10px 20px rgba(255,107,129,0.3);
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      .avatar:hover {
+        transform: scale(1.05) rotate(5deg); /* Lắc nhẹ khi đưa chuột vào */
+      }
+
+      /* THẺ DỰ ÁN (PROJECT CARDS) */
+      .project-card {
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 8px 25px rgba(255, 184, 184, 0.4);
+        transition: 0.3s;
+      }
+      .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 30px rgba(255, 184, 184, 0.6);
+      }
+
+      /* ẢNH DỰ ÁN */
+      .project-img {
+        width: 100%;
+        border-radius: 15px;
+        border: 3px solid #ffeaa7; /* Viền vàng pastel */
+        transition: 0.3s;
+      }
+      .project-img:hover {
+        transform: scale(1.03);
+      }
+
+      /* TÊN DỰ ÁN */
+      .papertitle {
+        font-family: 'Baloo 2', cursive;
+        font-size: 1.5em;
+        color: #ff7675;
+      }
+      
+      em {
+        color: #00cec9; /* Thêm chút xanh mint cho tươi mát */
+        font-weight: bold;
+        font-style: normal;
+        background: #e0fafa;
+        padding: 3px 10px;
+        border-radius: 10px;
+        font-size: 0.9em;
+      }
+    </style>
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table style="width:100%;max-width:850px;border:0;border-spacing:0;border-collapse:separate;margin: 40px auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
           
           <!-- PHẦN GIỚI THIỆU BẢN THÂN -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
+          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto; background: white; border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); padding: 20px;"><tbody>
+            <tr>
               <td style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
-                  Phạm Thị Thanh Huyền
+                  🌸 Phạm Thị Thanh Huyền 🌸
                 </p>
-                <p>
-		              Xin chào! Mình là sinh viên chuyên ngành <strong>International Finance</strong> (Tài chính Quốc tế) tại trường <a href="http://www.ftu.edu.vn/" target="_blank"><strong>Foreign Trade University</strong></a> (Đại học Ngoại Thương).
+                <p style="text-align: justify; font-size: 1.1em;">
+                  Xin chào mụi người! 👋 Mình là sinh viên chuyên ngành <strong>International Finance</strong> (Tài chính Quốc tế) tại trường <a href="http://www.ftu.edu.vn/" target="_blank"><strong>Đại học Ngoại Thương (FTU)</strong></a> 🏫.
                   <br><br>
-		              Ngoài những giờ học tập trên lớp, sở thích lớn nhất của mình là được ăn uống những món ngon và xách balo lên đi du lịch khám phá khắp mọi nơi hahaha!
+                  Ngoài những giờ cày cuốc trên lớp, đam mê to bự nhất của mình là được ăn uống những món ngon 🍣🍰 và xách balo lên đi du lịch khám phá khắp mọi nơi cùng bạn bè ✈️📸 hahaha!
                 </p>
-                <p style="text-align:center">
-                  <a href="mailto:huyenn13082006@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/huyencutephomaique">Github</a> &nbsp;/&nbsp;
-                  <a href="#">Facebook</a> 
+                <p style="text-align:center; font-size: 1.2em; margin-top: 20px;">
+                  <a href="mailto:huyenn13082006@gmail.com">💌 Email</a> &nbsp;|&nbsp;
+                  <a href="https://github.com/huyencutephomaique">🐱 Github</a> &nbsp;|&nbsp;
+                  <a href="#">💙 Facebook</a> 
                 </p>
               </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/anh-cua-huyen.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/anh-cua-huyen.jpg" class="hoverZoomLink"></a>
+              <td style="padding:2.5%;width:37%;max-width:37%; text-align: center;">
+                <img alt="profile photo" src="images/anh-cua-huyen.jpg" class="avatar">
               </td>
             </tr>
           </tbody></table>
 
           <!-- TIÊU ĐỀ PHẦN DỰ ÁN & THÀNH TỰU -->
-          <table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
+          <table style="width:100%; margin:30px auto 10px auto; border:0; border-spacing:0; text-align: center;"><tbody>
             <tr>
               <td>
-                <h2>Dự án & Thành tựu</h2>
+                <h2>✨ Dự án & Thành tựu ✨</h2>
               </td>
             </tr>
           </tbody></table>
 
           <!-- DANH SÁCH DỰ ÁN & THÀNH TỰU -->
-          <table style="width:100%;border:0px;border-spacing:0px 20px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <!-- Lưu ý: Dùng border-spacing để tạo khoảng cách giữa các thẻ -->
+          <table style="width:100%;border:0;border-spacing:0 25px;border-collapse:separate;margin:0 auto;"><tbody>
 
             <!-- 1. ĐƯỜNG TÁO QUÂN -->
-            <tr>
-              <td style="padding:16px;width:25%;vertical-align:middle">
-                <img src='images/duongtaoquan.jpg' width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <tr class="project-card">
+              <td style="padding:20px;width:30%;vertical-align:middle; border-radius: 20px 0 0 20px;">
+                <img src='images/duongtaoquan.jpg' class="project-img">
               </td>
-              <td style="padding:8px;width:75%;vertical-align:middle">
-                <span class="papertitle">Đường Táo Quân</span>
+              <td style="padding:20px;width:70%;vertical-align:middle; border-radius: 0 20px 20px 0;">
+                <span class="papertitle">🌱 Đường Táo Quân</span>
                 <br>
                 <em>Dự án bảo vệ môi trường</em>
                 <p></p>
                 <p>
-                  Đây là dự án tình nguyện bảo vệ môi trường mà mình tham gia. Dự án tập trung vào việc dọn dẹp rác thải, làm sạch môi trường cảnh quan và lan tỏa thông điệp sống xanh, nâng cao ý thức giữ gìn vệ sinh chung của cộng đồng.
+                  Đây là dự án tình nguyện siêu ý nghĩa mà mình tham gia. Tụi mình cùng nhau dọn dẹp rác thải, làm sạch cảnh quan và lan tỏa thông điệp sống xanh 🌿 đến cộng đồng. Cực xỉu nhưng mà vui quá trời!
                 </p>
               </td>
             </tr>
 
             <!-- 2. GIẢI NHẤT MÔN HÓA HỌC -->
-            <tr>
-              <td style="padding:16px;width:25%;vertical-align:middle">
-                <img src='images/thanhtuu2.jpg' width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <tr class="project-card">
+              <td style="padding:20px;width:30%;vertical-align:middle; border-radius: 20px 0 0 20px;">
+                <img src='images/thanhtuu2.jpg' class="project-img">
               </td>
-              <td style="padding:8px;width:75%;vertical-align:middle">
-                <span class="papertitle">Giải Nhất Học sinh giỏi môn Hóa học</span>
+              <td style="padding:20px;width:70%;vertical-align:middle; border-radius: 0 20px 20px 0;">
+                <span class="papertitle">🥇 Giải Nhất HSG Hóa học</span>
                 <br>
                 <em>Thành tựu cấp 3</em>
                 <p></p>
                 <p>
-                  Đạt Giải Nhất trong kỳ thi học sinh giỏi môn Hóa học. Quá trình ôn luyện môn học này đã giúp mình rèn luyện tư duy logic, sự tỉ mỉ và tính kiên trì trong học tập.
+                  Thành quả sau bao ngày tháng "ăn ngủ cùng bảng tuần hoàn". Quá trình ôn luyện môn học này đã giúp mình rèn luyện tư duy logic cực bén, sự tỉ mỉ và tính kiên trì không bỏ cuộc 🧪✨.
                 </p>
               </td>
             </tr>
 
             <!-- 3. GIẢI BA MÔN ĐỊA LÝ -->
-            <tr>
-              <td style="padding:16px;width:25%;vertical-align:middle">
-                <img src='images/thanhtuu1.jpg' width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <tr class="project-card">
+              <td style="padding:20px;width:30%;vertical-align:middle; border-radius: 20px 0 0 20px;">
+                <img src='images/thanhtuu1.jpg' class="project-img">
               </td>
-              <td style="padding:8px;width:75%;vertical-align:middle">
-                <span class="papertitle">Giải Ba Học sinh giỏi môn Địa lý</span>
+              <td style="padding:20px;width:70%;vertical-align:middle; border-radius: 0 20px 20px 0;">
+                <span class="papertitle">🥉 Giải Ba HSG Địa lý</span>
                 <br>
                 <em>Thành tựu cấp 3</em>
                 <p></p>
                 <p>
-                  Đạt Giải Ba trong kỳ thi học sinh giỏi môn Địa lý. Môn học này đã giúp mình mở rộng hiểu biết về tự nhiên, văn hóa, kinh tế và xã hội của nhiều vùng miền khác nhau.
+                  Vừa học vừa được "du lịch qua trang giấy". Môn Địa lý đã giúp mình mở rộng hiểu biết về tự nhiên, văn hóa, kinh tế và xã hội của rất nhiều vùng miền khác nhau 🌍☀️.
                 </p>
               </td>
             </tr>
@@ -104,12 +206,12 @@
           </tbody></table>
 
           <!-- PHẦN CHÂN TRANG (FOOTER) -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table style="width:100%;border:0;margin-top:20px;"><tbody>
             <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  Website template derived from <a href="https://github.com/jonbarron/jonbarron_website" target="_blank">Jon Barron's source code</a>.
+              <td style="text-align:center;">
+                <p style="font-size: 14px; color: #a4b0be;">
+                  💖 Made with cuteness and lots of cheese 🧀<br>
+                  <span style="font-size: 12px; opacity: 0.7;">Based on Jon Barron's template</span>
                 </p>
               </td>
             </tr>
